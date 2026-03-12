@@ -8,11 +8,13 @@ import { Ethics } from "@/components/ethics";
 import { Founder } from "@/components/founder";
 import { FutureVision } from "@/components/future-vision";
 import { Footer } from "@/components/footer";
+import { PalAssistant } from "@/components/pal-assistant";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background selection:bg-primary/30 selection:text-white">
       <Navbar />
+      <PalAssistant />
       <main>
         <Hero />
         <Ecosystem />
