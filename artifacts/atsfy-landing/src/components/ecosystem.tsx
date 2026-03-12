@@ -11,6 +11,8 @@ const products = [
     problem: "Traditional education fails to personalize learning or surface skill gaps in real time.",
     description: "AI-powered teaching and formative assessment tools that adapt to each learner's pace, identify gaps instantly, and align curricula to real-world industry needs.",
     users: "Students · Educators · Schools · Upskilling Institutes",
+    href: "https://education-ai-assistant.lovable.app/",
+    linkLabel: "Open Education AI",
     icon: GraduationCap,
     color: "from-purple-500 to-indigo-500",
     shadow: "hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]",
@@ -25,6 +27,8 @@ const products = [
     problem: "Information overload makes it nearly impossible to extract actionable knowledge efficiently.",
     description: "A conversational AI assistant that distils complex topics into clear, contextual, and actionable knowledge — bridging the gap between raw information and real understanding.",
     users: "Learners · Researchers · Corporate Teams · Knowledge Workers",
+    href: "https://knowledge-enabler.lovable.app/chat",
+    linkLabel: "Open Knowledge Enabler",
     icon: BrainCircuit,
     color: "from-blue-400 to-cyan-400",
     shadow: "hover:shadow-[0_0_30px_rgba(56,189,248,0.2)]",
@@ -39,6 +43,8 @@ const products = [
     problem: "Hiring is opaque and biased — recruiters miss talent; candidates never know why they're rejected.",
     description: "An AI-driven transparent hiring platform that gives recruiters precision-matched shortlists and candidates clear, explainable feedback — eliminating black-box decisions from both sides.",
     users: "HR Teams · Recruiters · Job Seekers · Talent Acquisition Leaders",
+    href: "https://atsfy-your-resume.lovable.app/",
+    linkLabel: "Open ATSfy Core",
     icon: Users,
     color: "from-emerald-400 to-teal-500",
     shadow: "hover:shadow-[0_0_30px_rgba(52,211,153,0.2)]",
@@ -53,6 +59,8 @@ const products = [
     problem: "Founders lack objective validation; investors lack fast, data-driven deal screening tools.",
     description: "An AI-powered scoring engine that evaluates startups across impact, market viability, and readiness — giving founders honest signals and investors intelligent deal flow analytics.",
     users: "Early-Stage Founders · Angel Investors · Incubators · Ecosystem Enablers",
+    href: "https://ventureval.lovable.app/",
+    linkLabel: "Open StartupLens",
     icon: Rocket,
     color: "from-orange-400 to-rose-400",
     shadow: "hover:shadow-[0_0_30px_rgba(251,146,60,0.2)]",
@@ -67,6 +75,8 @@ const products = [
     problem: "Financial advice is either inaccessible or opaque — people make costly decisions without understanding why.",
     description: "Explainable AI (XAI) for personal and business finance that doesn't just recommend — it explains. Transparent budgeting, goal planning, and growth strategies anyone can understand and trust.",
     users: "Individuals · Small Business Owners · Financial Advisors · Goal-Driven Savers",
+    href: "https://intelli-finance-insights--ayanpal0698.replit.app/",
+    linkLabel: "Open Finance XAI",
     icon: LineChart,
     color: "from-blue-600 to-indigo-600",
     shadow: "hover:shadow-[0_0_30px_rgba(79,70,229,0.2)]",
@@ -244,10 +254,16 @@ export function Ecosystem() {
 
               <div className="pt-5 border-t border-white/10 mt-auto">
                 <p className="text-xs text-muted-foreground/60 uppercase tracking-wider font-semibold mb-2">Target Users</p>
-                <div className="flex items-center justify-between">
-                  <p className="text-sm text-white/70">{product.users}</p>
-                  <ArrowUpRight className="w-4 h-4 text-muted-foreground opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 group-hover:text-white transition-all duration-300 flex-shrink-0 ml-2" />
-                </div>
+                <p className="text-sm text-white/70 mb-4">{product.users}</p>
+                <a
+                  href={product.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r ${product.color} opacity-80 hover:opacity-100 transition-all duration-200 hover:scale-[1.03] shadow-sm`}
+                >
+                  {product.linkLabel}
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
               </div>
             </motion.div>
           ))}
