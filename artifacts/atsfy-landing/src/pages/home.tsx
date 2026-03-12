@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { Ecosystem } from "@/components/ecosystem";
 import { About } from "@/components/about";
+import { Values } from "@/components/values";
 import { Vision } from "@/components/vision";
 import { Ethics } from "@/components/ethics";
 import { Founder } from "@/components/founder";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Ecosystem />
         <About />
+        <Values />
         <Vision />
         <Ethics />
         <Founder />

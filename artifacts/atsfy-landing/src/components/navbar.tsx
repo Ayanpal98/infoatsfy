@@ -17,6 +17,7 @@ export function Navbar() {
   const navLinks = [
     { name: "About", href: "#about" },
     { name: "Ecosystem", href: "#ecosystem" },
+    { name: "Values", href: "#values" },
     { name: "Vision", href: "#vision" },
     { name: "Ethics", href: "#ethics" },
     { name: "Founder", href: "#founder" },
