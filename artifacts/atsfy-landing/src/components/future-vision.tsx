@@ -72,6 +72,30 @@ export function FutureVision() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+        {/* Mission Statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative rounded-3xl overflow-hidden mb-20 border border-primary/20"
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-background to-accent/10 pointer-events-none" />
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
+          <div className="relative z-10 px-8 md:px-16 py-12 md:py-14 flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/30">
+              <Telescope className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Our Mission</p>
+              <p className="text-xl md:text-2xl font-display font-semibold text-white leading-snug">
+                To build an interconnected AI ecosystem that democratizes opportunity — from education to employment, entrepreneurship to financial freedom — rooted in Northeast India and built to scale across the world's emerging economies.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

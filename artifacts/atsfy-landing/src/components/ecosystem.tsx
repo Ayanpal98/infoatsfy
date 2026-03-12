@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GraduationCap, BrainCircuit, Users, UserCheck, Rocket, LineChart, ArrowUpRight } from "lucide-react";
+import { GraduationCap, BrainCircuit, Users, Rocket, LineChart, ArrowUpRight, ArrowRight } from "lucide-react";
 
 const products = [
   {
@@ -120,6 +120,86 @@ export function Ecosystem() {
             Five interconnected AI ventures that collectively cover the full arc of human potential — from learning to earning, building to thriving.
           </motion.p>
         </div>
+
+        {/* Journey Roadmap */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <p className="text-center text-xs font-bold uppercase tracking-widest text-muted-foreground mb-8">
+            The ATSFY User Journey — One Ecosystem, Every Stage of Life
+          </p>
+
+          {/* Desktop roadmap */}
+          <div className="hidden md:flex items-stretch gap-0 relative">
+            {/* Connecting line behind everything */}
+            <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-gradient-to-r from-purple-500/30 via-blue-400/40 via-emerald-400/40 via-orange-400/40 to-indigo-500/30 -translate-y-1/2 pointer-events-none" />
+
+            {[
+              { step: "01", label: "Learn", product: "Education AI", icon: GraduationCap, color: "from-purple-500 to-indigo-500", glow: "shadow-purple-500/20", border: "border-purple-500/30", desc: "Discover, upskill & grow" },
+              { step: "02", label: "Know", product: "Knowledge Enabler", icon: BrainCircuit, color: "from-blue-400 to-cyan-400", glow: "shadow-blue-400/20", border: "border-blue-400/30", desc: "Contextualise knowledge" },
+              { step: "03", label: "Get Hired", product: "ATSfy Core", icon: Users, color: "from-emerald-400 to-teal-500", glow: "shadow-emerald-400/20", border: "border-emerald-400/30", desc: "Match talent to opportunity" },
+              { step: "04", label: "Build", product: "StartupLens", icon: Rocket, color: "from-orange-400 to-rose-400", glow: "shadow-orange-400/20", border: "border-orange-400/30", desc: "Validate & launch ventures" },
+              { step: "05", label: "Grow", product: "Finance XAI", icon: LineChart, color: "from-indigo-500 to-blue-600", glow: "shadow-indigo-500/20", border: "border-indigo-500/30", desc: "Achieve financial freedom" },
+            ].map((node, i, arr) => (
+              <div key={node.step} className="flex items-center flex-1">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.12, type: "spring", stiffness: 260, damping: 20 }}
+                  className={`relative z-10 flex-1 flex flex-col items-center text-center p-5 rounded-2xl border ${node.border} bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-300 group hover:-translate-y-1 hover:shadow-lg ${node.glow} mx-1`}
+                >
+                  <div className="text-xs font-bold text-muted-foreground/50 mb-3">{node.step}</div>
+                  <div className={`w-12 h-12 rounded-xl mb-3 flex items-center justify-center bg-gradient-to-br ${node.color} shadow-md`}>
+                    <node.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-base font-bold text-white mb-0.5">{node.label}</p>
+                  <p className="text-xs font-semibold text-muted-foreground mb-1">{node.product}</p>
+                  <p className="text-xs text-muted-foreground/60 leading-snug">{node.desc}</p>
+                </motion.div>
+                {i < arr.length - 1 && (
+                  <ArrowRight className="w-5 h-5 text-white/20 flex-shrink-0 mx-1 z-10" />
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile roadmap — vertical */}
+          <div className="md:hidden flex flex-col gap-3 relative pl-8">
+            <div className="absolute left-4 top-4 bottom-4 w-[2px] bg-gradient-to-b from-purple-500/30 via-blue-400/30 via-emerald-400/30 via-orange-400/30 to-indigo-500/30" />
+            {[
+              { step: "01", label: "Learn", product: "Education AI", icon: GraduationCap, color: "from-purple-500 to-indigo-500", border: "border-purple-500/30" },
+              { step: "02", label: "Know", product: "Knowledge Enabler", icon: BrainCircuit, color: "from-blue-400 to-cyan-400", border: "border-blue-400/30" },
+              { step: "03", label: "Get Hired", product: "ATSfy Core", icon: Users, color: "from-emerald-400 to-teal-500", border: "border-emerald-400/30" },
+              { step: "04", label: "Build", product: "StartupLens", icon: Rocket, color: "from-orange-400 to-rose-400", border: "border-orange-400/30" },
+              { step: "05", label: "Grow", product: "Finance XAI", icon: LineChart, color: "from-indigo-500 to-blue-600", border: "border-indigo-500/30" },
+            ].map((node, i) => (
+              <motion.div
+                key={node.step}
+                initial={{ opacity: 0, x: -16 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className={`relative flex items-center gap-4 p-4 rounded-xl border ${node.border} bg-white/[0.02]`}
+              >
+                <div className={`absolute -left-[1.65rem] w-5 h-5 rounded-full flex items-center justify-center bg-gradient-to-br ${node.color} border-2 border-background flex-shrink-0`}>
+                  <node.icon className="w-2.5 h-2.5 text-white" />
+                </div>
+                <div className={`w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-to-br ${node.color} flex-shrink-0`}>
+                  <node.icon className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-white">{node.label} <span className="font-normal text-muted-foreground">— {node.product}</span></p>
+                </div>
+                <span className="ml-auto text-xs font-bold text-muted-foreground/40">{node.step}</span>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         <motion.div
           variants={container}
