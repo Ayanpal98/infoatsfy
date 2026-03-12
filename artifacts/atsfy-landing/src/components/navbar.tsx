@@ -18,6 +18,7 @@ export function Navbar() {
     { name: "About", href: "#about" },
     { name: "Ecosystem", href: "#ecosystem" },
     { name: "Vision", href: "#vision" },
+    { name: "Ethics", href: "#ethics" },
     { name: "Future", href: "#future" },
   ];
 
