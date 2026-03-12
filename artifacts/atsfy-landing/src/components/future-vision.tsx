@@ -63,7 +63,7 @@ const aspirations = [
 
 export function FutureVision() {
   return (
-    <section id="future" className="py-28 relative overflow-hidden">
+    <section id="future" className="pt-12 pb-28 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute inset-0 pointer-events-none -z-10">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[400px] bg-gradient-to-b from-primary/8 to-transparent blur-[120px]" />
@@ -202,7 +202,7 @@ export function FutureVision() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hello@atsfy.com"
+              href="mailto:info.atsfy@gmail.com"
               className="group px-8 py-4 bg-primary text-white rounded-xl font-semibold text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2 relative"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

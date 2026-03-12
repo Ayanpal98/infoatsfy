@@ -12,7 +12,7 @@ const companyLinks = [
   { name: "About Us", href: "#about" },
   { name: "Vision", href: "#vision" },
   { name: "Future", href: "#future" },
-  { name: "Contact", href: "mailto:hello@atsfy.com" },
+  { name: "Contact", href: "mailto:info.atsfy@gmail.com" },
 ];
 
 function LinkedInIcon({ className }: { className?: string }) {
@@ -54,8 +54,8 @@ export function Footer() {
             <p className="text-muted-foreground max-w-sm mb-6 leading-relaxed">
               Building an interconnected AI infrastructure — from talent readiness to financial growth — emerging from the Northeast for India and beyond.
             </p>
-            <a href="mailto:hello@atsfy.com" className="text-white hover:text-primary transition-colors font-medium block mb-6">
-              hello@atsfy.com
+            <a href="mailto:info.atsfy@gmail.com" className="text-white hover:text-primary transition-colors font-medium block mb-6">
+              info.atsfy@gmail.com
             </a>
 
             {/* Social links */}

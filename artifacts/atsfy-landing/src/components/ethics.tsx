@@ -55,7 +55,7 @@ const commitments = [
 
 export function Ethics() {
   return (
-    <section id="ethics" className="py-28 relative overflow-hidden">
+    <section id="ethics" className="pt-28 pb-12 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none -z-10">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-emerald-500/5 blur-[130px]" />

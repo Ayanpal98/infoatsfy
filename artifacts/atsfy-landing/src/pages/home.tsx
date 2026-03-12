@@ -4,6 +4,7 @@ import { Ecosystem } from "@/components/ecosystem";
 import { About } from "@/components/about";
 import { Vision } from "@/components/vision";
 import { Ethics } from "@/components/ethics";
+import { Founder } from "@/components/founder";
 import { FutureVision } from "@/components/future-vision";
 import { Footer } from "@/components/footer";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Vision />
         <Ethics />
+        <Founder />
         <FutureVision />
       </main>
       <Footer />
