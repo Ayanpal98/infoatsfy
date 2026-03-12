@@ -1,0 +1,16 @@
+packages:
+  "framer-motion": "For premium smooth scroll animations and page transitions"
+  "clsx": "Utility for conditionally joining classNames"
+  "tailwind-merge": "Utility to merge tailwind classes without style conflicts"
+
+images:
+  - path: "artifacts/atsfy-landing/public/images/hero-bg.png"
+    description: "Dark, futuristic abstract background with deep navy blue and glowing electric cyan geometric waves and subtle light leaks. High-end enterprise AI aesthetic."
+    aspect_ratio: "16:9"
+  - path: "artifacts/atsfy-landing/public/images/globe-nodes.png"
+    description: "Stylized, glowing abstract earth globe made of interconnected digital nodes and lines in electric blue against a very dark background. Representing global AI reach."
+    aspect_ratio: "16:9"
+
+notes:
+  - "This is a static landing page for a parent AI company. No backend APIs are needed."
+  - "Using hash-based smooth scrolling for navigation within the single page."
