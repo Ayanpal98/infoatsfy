@@ -1,8 +1,9 @@
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { Ecosystem } from "@/components/ecosystem";
-import { Vision } from "@/components/vision";
 import { About } from "@/components/about";
+import { Vision } from "@/components/vision";
+import { FutureVision } from "@/components/future-vision";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Ecosystem />
         <About />
         <Vision />
+        <FutureVision />
       </main>
       <Footer />
     </div>
