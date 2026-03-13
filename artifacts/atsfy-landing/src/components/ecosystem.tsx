@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GraduationCap, BrainCircuit, Users, Rocket, LineChart, ArrowUpRight, ArrowRight } from "lucide-react";
+import { GraduationCap, BrainCircuit, Users, Rocket, LineChart, Presentation, ArrowUpRight, ArrowRight } from "lucide-react";
 
 const products = [
   {
@@ -67,6 +67,22 @@ const products = [
     glow: "rgba(251,146,60,0.15)"
   },
   {
+    id: "pitch-deck-pro",
+    title: "Pitch Deck Pro",
+    subtitle: "Investor-Ready Storytelling",
+    badge: "AI · Narrative · Pitch",
+    tagline: "From idea to investor-ready in minutes",
+    problem: "Most founders have a great idea but struggle to translate it into a compelling, professional pitch that investors actually respond to.",
+    description: "An AI-powered pitch deck builder that crafts investor-ready presentations — structured narrative, market sizing, traction slides, and visual storytelling — tailored to your startup's unique story.",
+    users: "Founders · Early-Stage Startups · Incubatees · Student Entrepreneurs",
+    href: "https://pitch-deck-pro--ayanpal209806.replit.app/",
+    linkLabel: "Open Pitch Deck Pro",
+    icon: Presentation,
+    color: "from-pink-500 to-fuchsia-600",
+    shadow: "hover:shadow-[0_0_30px_rgba(236,72,153,0.2)]",
+    glow: "rgba(236,72,153,0.15)"
+  },
+  {
     id: "finance-xai",
     title: "Finance XAI",
     subtitle: "Financial Reasoning & Growth",
@@ -109,7 +125,7 @@ export function Ecosystem() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6"
           >
-            <span className="text-sm font-medium text-muted-foreground">Five Verticals. One Intelligence Layer.</span>
+            <span className="text-sm font-medium text-muted-foreground">Six Verticals. One Intelligence Layer.</span>
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
@@ -127,7 +143,7 @@ export function Ecosystem() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Five interconnected AI ventures that collectively cover the full arc of human potential — from learning to earning, building to thriving.
+            Six interconnected AI ventures that collectively cover the full arc of human potential — from learning to earning, building to thriving.
           </motion.p>
         </div>
 
@@ -153,7 +169,8 @@ export function Ecosystem() {
               { step: "02", label: "Know", product: "Knowledge Enabler", icon: BrainCircuit, color: "from-blue-400 to-cyan-400", glow: "shadow-blue-400/20", border: "border-blue-400/30", desc: "Contextualise knowledge" },
               { step: "03", label: "Get Hired", product: "ATSfy Core", icon: Users, color: "from-emerald-400 to-teal-500", glow: "shadow-emerald-400/20", border: "border-emerald-400/30", desc: "Match talent to opportunity" },
               { step: "04", label: "Build", product: "StartupLens", icon: Rocket, color: "from-orange-400 to-rose-400", glow: "shadow-orange-400/20", border: "border-orange-400/30", desc: "Validate & launch ventures" },
-              { step: "05", label: "Grow", product: "Finance XAI", icon: LineChart, color: "from-indigo-500 to-blue-600", glow: "shadow-indigo-500/20", border: "border-indigo-500/30", desc: "Achieve financial freedom" },
+              { step: "05", label: "Pitch", product: "Pitch Deck Pro", icon: Presentation, color: "from-pink-500 to-fuchsia-600", glow: "shadow-pink-500/20", border: "border-pink-500/30", desc: "Win investor confidence" },
+              { step: "06", label: "Grow", product: "Finance XAI", icon: LineChart, color: "from-indigo-500 to-blue-600", glow: "shadow-indigo-500/20", border: "border-indigo-500/30", desc: "Achieve financial freedom" },
             ].map((node, i, arr) => (
               <div key={node.step} className="flex items-center flex-1">
                 <motion.div
@@ -186,7 +203,8 @@ export function Ecosystem() {
               { step: "02", label: "Know", product: "Knowledge Enabler", icon: BrainCircuit, color: "from-blue-400 to-cyan-400", border: "border-blue-400/30" },
               { step: "03", label: "Get Hired", product: "ATSfy Core", icon: Users, color: "from-emerald-400 to-teal-500", border: "border-emerald-400/30" },
               { step: "04", label: "Build", product: "StartupLens", icon: Rocket, color: "from-orange-400 to-rose-400", border: "border-orange-400/30" },
-              { step: "05", label: "Grow", product: "Finance XAI", icon: LineChart, color: "from-indigo-500 to-blue-600", border: "border-indigo-500/30" },
+              { step: "05", label: "Pitch", product: "Pitch Deck Pro", icon: Presentation, color: "from-pink-500 to-fuchsia-600", border: "border-pink-500/30" },
+              { step: "06", label: "Grow", product: "Finance XAI", icon: LineChart, color: "from-indigo-500 to-blue-600", border: "border-indigo-500/30" },
             ].map((node, i) => (
               <motion.div
                 key={node.step}

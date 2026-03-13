@@ -43,7 +43,7 @@ function getResponse(input: string): { text: string; scrollTo?: string } {
 
   if (/product|ecosystem|venture|all.*tool|what.*build/i.test(q))
     return {
-      text: "ATSfy has five AI products:\n\n🎓 Education AI — personalised learning tools for students\n📚 Knowledge Enabler — makes knowledge easy to access and understand\n🧠 ATSfy Core — an honest, bias-free hiring system\n🚀 StartupLens — connects startups with the right investors\n💰 Finance XAI — explains your financial situation in simple terms\n\nAll five work together as one ecosystem.",
+      text: "ATSfy has six AI products:\n\n🎓 Education AI — personalised learning tools for students\n📚 Knowledge Enabler — makes knowledge easy to access and understand\n🧠 ATSfy Core — an honest, bias-free hiring system\n🚀 StartupLens — connects startups with the right investors\n🎤 Pitch Deck Pro — AI-powered pitch decks for founders\n💰 Finance XAI — explains your financial situation in simple terms\n\nAll six work together as one ecosystem.",
       scrollTo: "#ecosystem"
     };
 
@@ -65,9 +65,15 @@ function getResponse(input: string): { text: string; scrollTo?: string } {
       scrollTo: "#ecosystem"
     };
 
-  if (/startup|lens|investor|fund|pitch/i.test(q))
+  if (/startup|lens|investor|fund/i.test(q))
     return {
       text: "StartupLens helps early-stage startups find the right investors. It analyses a startup's profile and matches it with investors who are actually a good fit — saving founders from the exhausting spray-and-pray approach to fundraising.",
+      scrollTo: "#ecosystem"
+    };
+
+  if (/pitch|deck|presentation|slide|fundrais/i.test(q))
+    return {
+      text: "Pitch Deck Pro is ATSfy's AI-powered pitch deck builder. Most founders have a great idea but struggle to present it in a way investors respond to. Pitch Deck Pro builds structured, professional presentations for you — covering market sizing, traction, narrative, and visual storytelling — tailored to your startup's story.",
       scrollTo: "#ecosystem"
     };
 
