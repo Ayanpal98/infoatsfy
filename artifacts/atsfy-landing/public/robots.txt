@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://atsfy.com/sitemap.xml
+
+# Crawl delay (be polite)
+Crawl-delay: 10
+
+# Block access to source files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json$

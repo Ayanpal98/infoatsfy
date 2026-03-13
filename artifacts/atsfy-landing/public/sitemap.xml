@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://atsfy.com/</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://atsfy.com/" />
+    <image:image>
+      <image:loc>https://atsfy.com/og-image.png</image:loc>
+      <image:title>ATSFY Technologies — AI Ecosystem from Northeast India</image:title>
+      <image:caption>Building responsible, explainable AI infrastructure from Northeast India</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Section anchors (for rich results) -->
+  <url>
+    <loc>https://atsfy.com/#about</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://atsfy.com/#ecosystem</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://atsfy.com/#values</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://atsfy.com/#vision</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://atsfy.com/#ethics</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://atsfy.com/#founder</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://atsfy.com/#future</loc>
+    <lastmod>2025-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
