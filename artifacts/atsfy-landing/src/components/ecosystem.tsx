@@ -75,7 +75,7 @@ const products = [
     problem: "Most founders have a great idea but struggle to translate it into a compelling, professional pitch that investors actually respond to.",
     description: "An AI-powered pitch deck builder that crafts investor-ready presentations — structured narrative, market sizing, traction slides, and visual storytelling — tailored to your startup's unique story.",
     users: "Founders · Early-Stage Startups · Incubatees · Student Entrepreneurs",
-    href: "https://pitch-deck-pro--ayanpal209806.replit.app/",
+    href: "https://pitchdeckanalyse.lovable.app",
     linkLabel: "Open Pitch Deck Pro",
     icon: Presentation,
     color: "from-pink-500 to-fuchsia-600",
