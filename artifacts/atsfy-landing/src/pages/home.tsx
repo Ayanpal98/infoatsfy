@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
+import { PlatformSummary } from "@/components/platform-summary";
 import { Ecosystem } from "@/components/ecosystem";
 import { About } from "@/components/about";
 import { Values } from "@/components/values";
@@ -17,6 +18,7 @@ export default function Home() {
       <PalAssistant />
       <main>
         <Hero />
+        <PlatformSummary />
         <Ecosystem />
         <About />
         <Values />
